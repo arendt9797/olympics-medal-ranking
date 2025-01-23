@@ -32,7 +32,16 @@ const sortByBronze = (a, b) => {
 const sortByTotal = (a, b) => {
     const aTotal = a.medals.gold + a.medals.silver + a.medals.bronze
     const bTotal = b.medals.gold + b.medals.silver + b.medals.bronze
-    return bTotal - aTotal
+    if (aTotal !== bTotal) {
+        return bTotal - aTotal
+    }
+    if (a.medals.gold !== b.medals.gold) {
+        return b.medals.gold - a.medals.gold
+    }
+    if (a.medals.silver !== b.medals.silver) {
+        return b.medals.silver - a.medals.silver
+    }
+    return b.medals.bronze - a.medals.bronze
 }
 
 export { sortByGold, sortBySilver, sortByBronze, sortByTotal }
