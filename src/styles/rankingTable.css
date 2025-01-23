@@ -22,3 +22,7 @@ td {
 .table td {
     background-color: rgb(186, 243, 221);
 }
+
+.sort-by-medal {
+    cursor: pointer;
+}

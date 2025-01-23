@@ -40,6 +40,7 @@ function InputBar({ country, medals, rows, setCountry, setMedals, setRows }) {
     }
 
     // 국가 추가 버튼 클릭 시 테이블 데이터 추가
+    // 이미 해당 국가가 있을 경우 모달 열기
     const addRowHandler = () => {
         if (rows.find((row) => country === row.country)) {
             modalContentHandler('이미 해당 국가가 있습니다!')
@@ -52,6 +53,7 @@ function InputBar({ country, medals, rows, setCountry, setMedals, setRows }) {
     }
 
     // 업데이트 버튼 클릭 시 테이블 업데이트
+    // 해당 국가가 없을 경우 모달 열기
     const updateRowHandler = () => {
         if (!(rows.find((row) => country === row.country))) {
             modalContentHandler('업데이트할 국가가 없습니다!')

@@ -22,11 +22,13 @@ function RankingTableRow({ sortedRows, setRows }) {
         <tbody>
             {sortedRows.map((row) => {
                 const { id, country, medals } = row
+                const totalMedals = medals.gold + medals.silver + medals.bronze
                 return <tr key={id}>
                     <td>{country}</td>
                     <td>{medals.gold}</td>
                     <td>{medals.silver}</td>
                     <td>{medals.bronze}</td>
+                    <td>{totalMedals}</td>
                     <td><CRUDButton style={buttonStyle} buttonVariant='danger' rowId={row.id} handler={deleteRowHandler}>삭제</CRUDButton></td>
                 </tr>
             })}
