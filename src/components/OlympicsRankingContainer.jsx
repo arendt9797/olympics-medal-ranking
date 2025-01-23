@@ -4,6 +4,10 @@ import RankingTable from './RankingTable'
 import '../styles/olympicsRankingContainer.css'
 
 function OlympicsRankingContainer() {
+    // const getInitialData = () => {
+    //     return JSON.parse(localStorage.getItem('data')) || []
+    // }
+
     const [country, setCountry] = useState('')
     const [medals, setMedals] = useState({
         gold: '',

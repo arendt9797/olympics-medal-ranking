@@ -17,7 +17,7 @@ function RankingTableRow({ sortedRows, setRows }) {
         const remainedRows = sortedRows.filter((row) => id != row.id)
         setRows(remainedRows)
     }
-    
+
     return (
         <tbody>
             {sortedRows.map((row) => {
@@ -29,7 +29,15 @@ function RankingTableRow({ sortedRows, setRows }) {
                     <td>{medals.silver}</td>
                     <td>{medals.bronze}</td>
                     <td>{totalMedals}</td>
-                    <td><CRUDButton style={buttonStyle} buttonVariant='danger' rowId={row.id} handler={deleteRowHandler}>삭제</CRUDButton></td>
+                    <td>
+                        <CRUDButton
+                            style={buttonStyle}
+                            buttonVariant='danger'
+                            rowId={row.id}
+                            handler={deleteRowHandler}>
+                            삭제
+                        </CRUDButton>
+                    </td>
                 </tr>
             })}
         </tbody>
