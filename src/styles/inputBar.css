@@ -1,0 +1,32 @@
+.input-bar-container {
+    margin-bottom: 20px;
+}
+
+.input-element {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.input-element>div {
+    text-align: center;
+    font-weight: bold;
+}
+
+input {
+    border: 3px inset rgb(97, 190, 155);
+    border-radius: 15px;
+    padding: 0 0 0 15px;
+    width: 180px;
+    height: 40px;
+    border-image: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    margin: 0 5px;
+}

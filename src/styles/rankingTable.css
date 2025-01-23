@@ -1,0 +1,24 @@
+.ranking-table {
+    width: 1150px;
+    margin: 30px 0 10px;
+}
+
+table {
+    text-align: center;
+}
+
+th,
+td {
+    width: 200px;
+    vertical-align: middle;
+    font-size: large;
+}
+
+.table th {
+    background-color: rgb(97, 190, 155);
+    color: aliceblue;
+}
+
+.table td {
+    background-color: rgb(186, 243, 221);
+}
