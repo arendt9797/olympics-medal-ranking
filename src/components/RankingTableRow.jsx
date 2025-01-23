@@ -4,7 +4,7 @@ import CRUDButton from './CRUDButton'
 // 테이블 행 컴포넌트
 function RankingTableRow({ sortedRows, setRows }) {
     // 버튼 스타일
-    const style = {
+    const buttonStyle = {
         margin: "auto",
         padding: "0",
         height: "30px",
@@ -27,7 +27,7 @@ function RankingTableRow({ sortedRows, setRows }) {
                     <td>{medals.gold}</td>
                     <td>{medals.silver}</td>
                     <td>{medals.bronze}</td>
-                    <td><CRUDButton style={style} buttonVariant='danger' rowId={row.id} handler={deleteRowHandler}>삭제</CRUDButton></td>
+                    <td><CRUDButton style={buttonStyle} buttonVariant='danger' rowId={row.id} handler={deleteRowHandler}>삭제</CRUDButton></td>
                 </tr>
             })}
         </tbody>

@@ -1,9 +1,18 @@
 import React from 'react'
-import { Modal } from 'react-bootstrap'
+import { Modal, Button } from 'react-bootstrap'
+import '../styles/ExceptionModal.css'
 
-function ExceptionModal({ show }) {
+// 모달 컴포넌트
+function ExceptionModal({ show, setShow, modalContent }) {
+    const closeModalHandler = () => setShow(false)
+
     return (
-        <div>ExceptionModal</div>
+        <Modal show={show} onHide={closeModalHandler} centered>
+            <Modal.Header className='modal-header' closeButton>⚠️ 어머나 세상에나!</Modal.Header>
+            <Modal.Body className='modal-body'>
+                {modalContent}
+            </Modal.Body>
+        </Modal>
     )
 }
 
