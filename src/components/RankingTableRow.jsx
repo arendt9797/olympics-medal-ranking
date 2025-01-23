@@ -2,7 +2,7 @@ import React from 'react'
 import CRUDButton from './CRUDButton'
 
 // 테이블 행 컴포넌트
-function RankingTableRow({ sortedRows }) {
+function RankingTableRow({ rows }) {
     // 버튼 스타일
     const style = {
         margin: "auto",
@@ -20,7 +20,7 @@ function RankingTableRow({ sortedRows }) {
     
     return (
         <tbody>
-            {sortedRows.map((row) => {
+            {rows.map((row) => {
                 const { id, country, medals } = row
                 return <tr key={id}>
                     <td>{country}</td>
