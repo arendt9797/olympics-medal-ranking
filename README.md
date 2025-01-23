@@ -18,10 +18,29 @@
 <br/>
 <br/>
 ### ⚛️리액트적 사고
+**1. 본격적인 개발에 앞서 전체적인 UI를 컴포넌트 계층으로 나누기**
 
 ![image](https://github.com/user-attachments/assets/ef0b45cc-bad0-4637-a867-822d7cf79aac)
 
 ![image](https://github.com/user-attachments/assets/0c0ec0aa-fb55-4edd-b307-8fc5efe854f7)
+
+<br/>
+
+**2. 정적인 버전의 페이지 구현**
+
+![image](https://github.com/user-attachments/assets/3cfa33ef-7144-4e03-bde2-721cab213dd8)
+
+<br/>
+
+**3. 어떤 데이터를 `state`로 할지 결정**
+
+<br/>
+
+**4. `state`의 위치 결정**
+
+<br/>
+
+**5. 역 데이터 흐름 추가하여 `state`변경**
 
 <br/>
 <br/>
