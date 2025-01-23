@@ -17,6 +17,15 @@
 <br/>
 <br/>
 <br/>
+### ⚛️리액트적 사고
+
+![image](https://github.com/user-attachments/assets/ef0b45cc-bad0-4637-a867-822d7cf79aac)
+
+![image](https://github.com/user-attachments/assets/0c0ec0aa-fb55-4edd-b307-8fc5efe854f7)
+
+<br/>
+<br/>
+<br/>
 
 ## 🪄프로젝트 특징
 - **React**와 `useState`만을 사용하여 만들어진 프로젝트입니다.
