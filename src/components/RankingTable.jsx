@@ -24,7 +24,7 @@ function RankingTable({ rows, setRows }) {
 
     // 정렬된 배열 생성
     const sortedRows = structuredClone(rows).sort(sortConfig.compareFunction)
-    
+
     // 클릭된 상태인지 확인
     const currentSort = (key) => {
         return sortConfig.key === key ? '▼' : '▽'
@@ -38,28 +38,28 @@ function RankingTable({ rows, setRows }) {
                         <th>국가</th>
                         <th>🥇금메달
                             <span
-                                onClick={ () => sortingHandler('gold', compare.sortByGold) }
+                                onClick={() => sortingHandler('gold', compare.sortByGold)}
                                 className='sort-by-medal'>
                                 {currentSort('gold')}
                             </span>
                         </th>
                         <th>🥈은메달
                             <span
-                                onClick={ () => sortingHandler('silver', compare.sortBySilver) }
+                                onClick={() => sortingHandler('silver', compare.sortBySilver)}
                                 className='sort-by-medal'>
                                 {currentSort('silver')}
                             </span>
                         </th>
                         <th>🥉동메달
                             <span
-                                onClick={ () => sortingHandler('bronze', compare.sortByBronze) }
+                                onClick={() => sortingHandler('bronze', compare.sortByBronze)}
                                 className='sort-by-medal'>
                                 {currentSort('bronze')}
                             </span>
                         </th>
                         <th>합계
                             <span
-                                onClick={ () => sortingHandler('total', compare.sortByTotal) }
+                                onClick={() => sortingHandler('total', compare.sortByTotal)}
                                 className='sort-by-medal'>
                                 {currentSort('total')}
                             </span>
