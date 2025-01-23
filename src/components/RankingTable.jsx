@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import RankingTableRow from './RankingTableRow';
-import * as compare from '../util/SortByMedal';
+import * as compare from '../util/sortByMedal';
 import { Table } from 'react-bootstrap';
 import '../styles/RankingTable.css'
 
