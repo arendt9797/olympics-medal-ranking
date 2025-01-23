@@ -4,9 +4,10 @@ const getInitialData = (key) => {
 }
 
 // 로컬 스토리지 저장과 상태 업데이트를 한 번에 처리하는 함수
-const setData = (setState, key) => (newRows) => {
-    setState(newRows)
-    localStorage.setItem(key, JSON.stringify(newRows))
+const setData = (setState, key) => (newState) => {
+    setState(newState)
+    localStorage.setItem(key, JSON.stringify(newState))
 }
+
 
 export { getInitialData, setData }
