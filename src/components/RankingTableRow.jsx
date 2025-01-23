@@ -2,7 +2,7 @@ import React from 'react'
 import CRUDButton from './CRUDButton'
 
 // 테이블 행 컴포넌트
-function RankingTableRow({ rows }) {
+function RankingTableRow({ sortedRows, setRows }) {
     // 버튼 스타일
     const style = {
         margin: "auto",
@@ -14,13 +14,13 @@ function RankingTableRow({ rows }) {
 
     // 삭제 버튼 클릭 시 데이터 삭제
     const deleteRowHandler = (id) => {
-        const remainedRows = rows.filter((row) => id != row.id)
+        const remainedRows = sortedRows.filter((row) => id != row.id)
         setRows(remainedRows)
     }
     
     return (
         <tbody>
-            {rows.map((row) => {
+            {sortedRows.map((row) => {
                 const { id, country, medals } = row
                 return <tr key={id}>
                     <td>{country}</td>

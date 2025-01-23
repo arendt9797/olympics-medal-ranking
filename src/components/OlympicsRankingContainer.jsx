@@ -13,20 +13,20 @@ function OlympicsRankingContainer() {
     const [rows, setRows] = useState([])
 
     return (
-        <div className="ranking-container"> 
+        <div className="ranking-container">
             <h1>🗼Paris 2024 Olympics</h1>
             {/* 입력 컴포넌트 */}
-            <InputBar 
+            <InputBar
                 country={country}
                 medals={medals}
                 rows={rows}
                 setCountry={setCountry}
                 setMedals={setMedals}
-                setRows={setRows}/>
+                setRows={setRows} />
             {/* 테이블 컴포넌트 */}
             <RankingTable
                 rows={rows}
-                setRows={setRows}/>
+                setRows={setRows} />
         </div>
     )
 }
