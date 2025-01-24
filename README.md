@@ -27,12 +27,20 @@
 <br/>
 
 **2. 정적인 버전의 페이지 구현**
+상호작용에 의한 동적인 변화를 제외한 정적인 부분을 우선 구현
 
 ![image](https://github.com/user-attachments/assets/3cfa33ef-7144-4e03-bde2-721cab213dd8)
 
 <br/>
 
 **3. 어떤 데이터를 `state`로 할지 결정**
+- **country, medals**: 사용자의 입력에 따라 변함.
+  
+- **rows**: 사용자가 CRUD를 진행함에 따라 테이블 행이 변함.
+
+- **show, modalContent** : 버튼을 누르면 상태에 따라 모달 표시 여부가 결정되어야 함.
+  
+- **sortConfig** : 어떤 기준을 고르냐에 따라 정렬 방식이 달라져야 함.
 
 <br/>
 
