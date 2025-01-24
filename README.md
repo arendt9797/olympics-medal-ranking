@@ -76,7 +76,7 @@
 <br/>
 
 ## 🔫트러블 슈팅
-- ### 
+- ### [상태 변경 시 발생하는 무한 리렌더링 현상에 대하여](https://velog.io/@arendt9797/%ED%8A%B8%EB%9F%AC%EB%B8%94%EC%8A%88%ED%8C%85-%EC%83%81%ED%83%9C-%EB%B3%80%EA%B2%BD-%EC%8B%9C-%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94-%EB%AC%B4%ED%95%9C-%EB%A6%AC%EB%A0%8C%EB%8D%94%EB%A7%81%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC)
 <br/>
 <br/>
 <br/>
